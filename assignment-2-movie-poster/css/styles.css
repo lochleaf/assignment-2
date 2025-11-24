@@ -18,59 +18,45 @@ body {
     font-size: 2.5rem;
     text-align: center;
     letter-spacing: 0.15em;
-    position: absolute;
-	top: 0;
-	right: 0;
 }
 
 .title-block {
     text-align: center;
-    margin-top: 2rem;
-    position: absolute;
-	top: 0;
-	right: 0;
-}
-
-.title-block h1 {
-    font-family: 'Oswald', fangsong;
-    font-size: 3rem;
-    margin: 0.5rem 0;
-    position: absolute;
-	top: 0;
-	right: 0;
-}
-
-.title-block h2 {
-    font-family: 'Oswald', fangsong;
-    font-size: 2.2rem;
-    position: absolute;
-	top: 0;
-	right: 0;
+    margin-top: 600px;
 }
 
 .release h2 {
-    font-size: 2.8rem;
+    text-align: center;
+    font-size: 2.5rem;
     font-family: 'Oswald', fangsong;
-    position: absolute;
-	top: 0;
-	right: 0;
+    margin-top: -3rem;
+    
+}
+.release h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Oswald', fangsong;
+    margin-top: 0rem;
+    
 }
 
 .imax {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-    position: absolute;
-	top: 0;
-	right: 0;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 0rem;
+}
+
+.imax-bold {
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 0rem;
 }
 
 .credits {
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 0rem;
     font-size: 0.8rem;
     opacity: 0.9;
-    position: absolute;
-	top: 0;
-	right: 0;
 }
 
