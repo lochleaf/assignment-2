@@ -29,12 +29,13 @@ body::after {
     font-family: 'Oswald', fangsong;
     font-size: 2.5rem;
     text-align: center;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.34em;
 }
 
 .title-block {
     text-align: center;
     margin-top: 600px;
+    letter-spacing: 0.15em;
 }
 
 .release h2 {
@@ -42,21 +43,22 @@ body::after {
     font-size: 2.5rem;
     font-family: 'Oswald', fangsong;
     margin-top: -3rem;
-    
-    
+    letter-spacing: 0.15em;
 }
+
 .release h3 {
     text-align: center;
     font-size: 2rem;
     font-family: 'Oswald', fangsong;
     margin-top: 0rem;
-    
+    letter-spacing: 0.15em;
 }
 
 .imax {
     text-align: center;
     font-size: 1rem;
     margin-top: 0rem;
+    letter-spacing: 0.15em;
 }
 
 .imax-bold {
