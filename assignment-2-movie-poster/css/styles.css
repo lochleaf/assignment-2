@@ -1,1 +1,14 @@
 @charset "utf-8";
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url("../images/demon-slayer-background.webp");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
