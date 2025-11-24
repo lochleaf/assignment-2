@@ -42,10 +42,15 @@ body::after {
 
 .tagline h2 {
     font-family: 'Oswald', fangsong;
-    font-size: 2.5rem;
+    font-size: 1.9rem;
     text-align: center;
-    letter-spacing: 0.34em;
-     margin-top: -12rem;
+    letter-spacing: 0.37em;
+     margin-top: -11rem;
+}
+
+.title-block img {
+    height: 250px;
+    width: auto;
 }
 
 .title-block {
