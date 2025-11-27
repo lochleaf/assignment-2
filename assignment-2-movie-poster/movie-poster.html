@@ -33,8 +33,42 @@
                     </footer>
 
                 </div>
-
+                <div><button class="heart-button" id="likes">♡<span id="heartCount">0</span></button></div>
+                <div class="message-box" class="side-border side-left">
+                    <textarea id="userMessage" placeholder="write someting..."></textarea>
+                    <button id="postButton">Post</button>
+                </div>
+                <div id="messageDisplay" class="message-display"></div>
                 <div class="side-border side-left"></div>
                 <div class="side-border side-right"></div>
             </main>
+                <script>
+                    let heartCount = 0;
+
+                    document.getElementById("likes").addEventListener("click", function () {
+                        heartCount++;
+                        document.getElementById("heartCount").textContent = heartCount;
+                    });
+
+                    document.getElementById("postButton").addEventListener("click", function () {
+                        let msg = document.getElementById("userMessage").value;
+
+                        if (msg.trim() === "") {
+                            alert("Please write something first!");
+                            return;
+                        }
+
+                        let messageDiv = document.createElement("div");
+                        messageDiv.className = "message-item";
+                        messageDiv.textContent = msg;
+
+                        document.getElementById("messageDisplay").appendChild(messageDiv);
+
+                        document.getElementById("userMessage").value = "";
+
+                        setTimeout(() => {
+                            messageDiv.remove();
+                        }, 30000);  // 60000 ms = 1 minute 30000 ms = 30 seconds
+                    });
+            </script>
         </body>

@@ -103,17 +103,62 @@ body::after {
     height: 100vh;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center 150px;
+    background-position: center 500px;
     z-index: 10;
     pointer-events: none;
 }
 
 .side-left {
     left: 0;
-    background-image: url("../images/cute-tanjiro-icon.png");
+    background-image: url("../images/demon-slayer-gif-better.gif");
 }
 
 .side-right {
     right: 0;
-    background-image: url("../images/cute-tanjiro-icon.png");
+    background-image: url("../images/nezuko-better.gif");
+}
+
+.heart-button {
+    position: absolute;
+    top: 900px;   
+    right: 220px; 
+    background: white;
+    border: none;
+    font-size: 80px;
+    cursor: pointer;
+}
+
+.message-box {
+    text-align: left;
+    margin-top: -215px;
+    margin-left: 30px;
+}
+
+#userMessage {
+    width: 22%;
+    height: 140px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#postButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.message-display {
+    margin-top: -970px;
+    width: 25%;
+    margin-left: 45px;
+    margin-right: auto;
+}
+
+.message-item {
+    background: #222;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
 }
