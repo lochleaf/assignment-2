@@ -111,6 +111,7 @@ body::after {
 .side-left {
     left: 0;
     background-image: url("../images/demon-slayer-gif-better.gif");
+    
 }
 
 .side-right {
@@ -126,6 +127,7 @@ body::after {
     border: none;
     font-size: 80px;
     cursor: pointer;
+    z-index: 2;
 }
 
 .message-box {
@@ -149,7 +151,7 @@ body::after {
 }
 
 .message-display {
-    margin-top: -970px;
+    margin-top: -1000px;
     width: 25%;
     margin-left: 45px;
     margin-right: auto;
@@ -161,4 +163,82 @@ body::after {
     padding: 15px;
     border-radius: 10px;
     margin-top: 15px;
+}
+
+.play-button {
+  
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.play-button img {
+    position: absolute;
+    left: 1740px;
+    top: 5px;
+    width: 120px;
+    transition: transform 0.1s ease;
+}
+
+.play-button:active img {
+    transform: scale(0.95);
+}
+
+.ref1 {
+    position: absolute;
+    top: 30px;
+    right: 170px;
+    color: azure;
+    font-size: 25px;
+}
+
+.ref2 {
+    position: absolute;
+    top: 60px;
+    right: 230px;
+    color: azure;
+    font-size: 25px;
+}
+
+.text1 {
+    position: absolute;
+    top: 10px;
+    right: 1510px;
+    color: azure;
+    font-size: 30px;   
+}
+
+.text2 {
+    position: absolute;
+    top: 165px;
+    right: 310px;
+    color: azure;
+    font-size: 30px;  
+    z-index: 1; 
+}
+
+.p {
+    position: absolute;
+    top: 210px;         /* Moves text down INTO the white area */
+    left: 1355px;        /* Push text away from left border */
+    right: 35px;       /* Push text away from right border */
+    bottom: 35px;      /* Padding so text doesn’t touch bottom */
+    z-index: 1;
+    font-size: 23px;
+    color: darkblue;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.popup {
+    position: absolute;
+    top: 160px;
+    left: 1350px; 
+}
+
+.popup img {
+    height: auto;
+    width: 500px;
+    display: block;
 }
