@@ -1,10 +1,12 @@
 @charset "utf-8";
+/* set default font */
 html, body {
     height: 100%;
     margin: 0;
-    font-family: 'Roboto', fangsong;
+    font-family:  'Times New Roman', Times, serif;
 }
 
+/* Background poster img */
 body {
     background-color: black;
     background-image: url("../images/demon-slayer-background.webp");
@@ -18,6 +20,7 @@ body {
 
 }
 
+/* Bottom gradient */
 body::after {
     content: "";
     position: fixed;
@@ -30,6 +33,7 @@ body::after {
     z-index: -1;
 }
 
+/* main content from poster */
 .poster-content {
     position: relative;
     z-index: 5;
@@ -40,41 +44,47 @@ body::after {
     text-align: center;
 }
 
+/* Tagline text h2 */
 .tagline h2 {
-    font-family: 'Oswald', fangsong;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 1.9rem;
     text-align: center;
     letter-spacing: 0.37em;
      margin-top: -11rem;
 }
 
+/* Movie logo and size it */
 .title-block img {
     height: 250px;
     width: auto;
 }
 
+/* movie logo and text position */
 .title-block {
     text-align: center;
     margin-top: 600px;
     letter-spacing: 0.15em;
 }
 
+/* release date styling */
 .release h2 {
     text-align: center;
     font-size: 2.5rem;
-    font-family: 'Oswald', fangsong;
+    font-family: 'Times New Roman', Times, serif;
     margin-top: -3rem;
     letter-spacing: 0.15em;
 }
 
+/* styling text */
 .release h3 {
     text-align: center;
     font-size: 2rem;
-    font-family: 'Oswald', fangsong;
+    font-family: 'Times New Roman', Times, serif;
     margin-top: 0rem;
     letter-spacing: 0.15em;
 }
 
+/* imax styling */
 .imax {
     text-align: center;
     font-size: 1rem;
@@ -82,6 +92,7 @@ body::after {
     letter-spacing: 0.15em;
 }
 
+/* made it bold at the end */
 .imax-bold {
     text-align: center;
     font-size: 1.3rem;
@@ -89,6 +100,7 @@ body::after {
     margin-top: 0rem;
 }
 
+/* Credits text styling */
 .credits {
     text-align: center;
     margin-top: 0rem;
@@ -96,6 +108,7 @@ body::after {
     opacity: 0.9;
 }
 
+/* Side GIF borders */
 .side-border {
     position: fixed;
     top: 0;
@@ -108,17 +121,20 @@ body::after {
     pointer-events: none;
 }
 
+/* Left GIF */
 .side-left {
     left: 0;
     background-image: url("../images/demon-slayer-gif-better.gif");
     
 }
 
+/* Right GIF */
 .side-right {
     right: 0;
     background-image: url("../images/nezuko-better.gif");
 }
 
+/* Heart button styling */
 .heart-button {
     position: absolute;
     top: 900px;   
@@ -130,12 +146,14 @@ body::after {
     z-index: 2;
 }
 
+/* Message input area */
 .message-box {
     text-align: left;
     margin-top: -215px;
     margin-left: 30px;
 }
 
+/* Text area styling */
 #userMessage {
     width: 22%;
     height: 140px;
@@ -143,6 +161,7 @@ body::after {
     border-radius: 10px;
 }
 
+/* Post button styling */
 #postButton {
     margin-top: 10px;
     padding: 10px 20px;
@@ -150,6 +169,7 @@ body::after {
     cursor: pointer;
 }
 
+/* Posted messages container */
 .message-display {
     margin-top: -1000px;
     width: 25%;
@@ -157,6 +177,7 @@ body::after {
     margin-right: auto;
 }
 
+/* Individual posted messages */
 .message-item {
     background: #222;
     color: white;
@@ -165,6 +186,7 @@ body::after {
     margin-top: 15px;
 }
 
+/* Styling button */
 .play-button {
   
     background: none;
@@ -173,6 +195,7 @@ body::after {
     cursor: pointer;
 }
 
+/* trailer play button */
 .play-button img {
     position: absolute;
     left: 1740px;
@@ -181,10 +204,12 @@ body::after {
     transition: transform 0.1s ease;
 }
 
+/* Press animation */
 .play-button:active img {
     transform: scale(0.95);
 }
 
+/* External ref link positions cites */
 .ref1 {
     position: absolute;
     top: 30px;
@@ -193,6 +218,7 @@ body::after {
     font-size: 25px;
 }
 
+/* External ref link positions cites */
 .ref2 {
     position: absolute;
     top: 60px;
@@ -201,6 +227,7 @@ body::after {
     font-size: 25px;
 }
 
+/* Styling comments title */
 .text1 {
     position: absolute;
     top: 10px;
@@ -209,6 +236,7 @@ body::after {
     font-size: 30px;   
 }
 
+/* Styling summary title*/
 .text2 {
     position: absolute;
     top: 165px;
@@ -218,12 +246,13 @@ body::after {
     z-index: 1; 
 }
 
+/* Summary text */
 .p {
     position: absolute;
-    top: 210px;         /* Moves text down INTO the white area */
-    left: 1355px;        /* Push text away from left border */
-    right: 35px;       /* Push text away from right border */
-    bottom: 35px;      /* Padding so text doesn’t touch bottom */
+    top: 210px;         
+    left: 1355px;        
+    right: 35px;       
+    bottom: 35px;      
     z-index: 1;
     font-size: 23px;
     color: darkblue;
@@ -231,12 +260,14 @@ body::after {
     text-align: center;
 }
 
+/* summary background img position */
 .popup {
     position: absolute;
     top: 160px;
     left: 1350px; 
 }
 
+/* summary background img styling */
 .popup img {
     height: auto;
     width: 500px;

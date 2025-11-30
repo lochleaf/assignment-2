@@ -7,6 +7,8 @@
 		<meta name="description" content="A concise and accurate summary of the document content is to appear here">
 		<link rel="shortcut icon" href="images/cute-tanjiro-icon5.png" type="image/x-icon" />
         <link rel="stylesheet" href="css/styles2.css" />
+
+        <!-- styling video size scaling -->
         <style>
             video {
                 width: 100%;
@@ -19,42 +21,37 @@
 
 	</head>
     <body>
-
-       <!-- <video src="video/demon-slayer-trailer-video.mp4"
-        <video src="video/demon-slayer-trailer-video.zip" controls         
-        controls 
-        autoplay> 
-        </video>-->
-
-       <!--<li><a href="https://www.youtube.com/watch?v=x7uLutVRBfI"></a></li>-->
+        <!-- Button that opens the youtube trailer popup -->
        <button onclick="openPopup()">Watch Trailer</button>
 
-<div id="popup" style="
-    display:none;
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,0.7);
-    padding:40px;
-">
-
+       <!-- Full screen popup overlay -->
+    <div id="popup" style="
+        display:none;
+        position:fixed;
+        inset:0;
+        background:rgba(0,0,0,0.7);
+        padding:40px;">
+    <!-- pop-up container that centers the video -->
     <div style="
         width:90%;
         max-width:800px;
         margin:auto;
-        background:none;
-    ">
+        background:none;">
+
+        <!-- close popup button -->
         <button onclick="closePopup()">Close</button><br><br>
 
         <div style="position:relative; width:100%; padding-bottom:56.25%;">
+            <!-- Youtube video iframe -->
             <iframe id="videoFrame"
-                src=""
+                src="https://www.youtube.com/watch?v=x7uLutVRBfI"
                 style="
                     position:absolute;
                     top:0;
                     left:0;
                     width:100%;
-                    height:100%;
-                "
+                    height:100%;"
+                  
                 allow="autoplay"
                 allowfullscreen>
             </iframe>
@@ -63,15 +60,20 @@
 
 </div>
 
+<!-- javascript control the opening and closing the popup window -->
 <script>
+    //Open popup and starts video and autoplay
 function openPopup() {
     document.getElementById("popup").style.display = "block";
+    //autoplay
     document.getElementById("videoFrame").src =
         "https://www.youtube.com/embed/x7uLutVRBfI?autoplay=1";
 }
 
+//closes popup and stops the video
 function closePopup() {
     document.getElementById("popup").style.display = "none";
+    //reset iframe stop video
     document.getElementById("videoFrame").src = "";
 }
 </script>
